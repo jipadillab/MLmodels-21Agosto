@@ -5,8 +5,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import random
 
-# Deshabilita la advertencia de uso global de pyplot, común en Streamlit
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# La línea st.set_option('deprecation.showPyplotGlobalUse', False) ha sido eliminada
+# ya que la opción 'deprecation.showPyplotGlobalUse' ya no es reconocida por Streamlit,
+# lo que causaba el KeyError. Esta advertencia no es necesaria en versiones recientes.
 
 def generate_sport_data(num_samples, num_cols):
     """
